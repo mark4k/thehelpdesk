@@ -1,0 +1,28 @@
+RewriteEngine on
+
+RewriteRule ^dashboard/view/orderdetail/([0-9a-zA-Z]+)$ dashboard/view/orderdetail.php?itemId=$1 [NC,L]
+RewriteRule ^dashboard/view/returndetail/([0-9a-zA-Z]+)$ dashboard/view/returndetail.php?itemId=$1 [NC,L]
+
+RewriteRule ^login$ config/login [NC,L]
+RewriteRule ^config/addqty/([0-9a-zA-Z]+)$ config/addqty.php?repair_id=$1 [NC,L]
+RewriteRule ^config/returnproduct/([0-9a-zA-Z]+)$ config/returnproduct.php?repair_id=$1 [NC,L]
+
+RewriteRule ^dashboard/products/([0-9a-zA-Z]+)$ dashboard/products.php?catId=$1 [NC,L]
+
+RewriteRule ^dashboard/insert/editcategory/([0-9a-zA-Z]+)$ dashboard/insert/editcategory.php?user_id=$1 [NC,L]
+RewriteRule ^dashboard/insert/editproduct/([0-9a-zA-Z]+)$ dashboard/insert/editproduct.php?repair_id=$1 [NC,L]
+RewriteRule ^dashboard/insert/changeproduct/([0-9a-zA-Z]+)$ dashboard/insert/changeproduct.php?repair_id=$1 [NC,L]
+RewriteRule ^dashboard/insert/changerole/([0-9a-zA-Z]+)$ dashboard/insert/changerole.php?repair_id=$1 [NC,L]
+RewriteRule ^dashboard/insert/position/([0-9a-zA-Z]+)$ dashboard/insert/position.php?itemId=$1 [NC,L]
+RewriteRule ^dashboard/insert/repairdetail/([0-9a-zA-Z]+)$ dashboard/insert/repairdetail.php?repair_id=$1 [NC,L]
+RewriteRule ^dashboard/insert/repair/([0-9a-zA-Z]+)$ dashboard/insert/repair.php?itemId=$1 [NC,L]
+
+RewriteRule ^config/mpdf/invbill/([0-9a-zA-Z]+)$ config/mpdf/invbill.php?itemId=$1 [NC,L]
+RewriteRule ^config/mpdf/index/([0-9a-zA-Z]+)$ config/mpdf/index.php?repair_id=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L] 
+
+ErrorDocument 404 /thehelpdesk/error404.html
+ErrorDocument 403 /thehelpdesk/error404.html

@@ -1,0 +1,12 @@
+P00101,ทดสอบเพิ่มข้อมูล 150365,ทดสอบ,book.jpg,250,SFF-585-SD,2,20,5,50,1,1,,,,Column A,Product Code
+P00102,ทดสอบเพิ่มข้อมูล2 150365,ทดสอบ,book.jpg,251,SFF-585-SD,2,20,5,50,1,1,,,,Column B,Product Name
+,,,,,,,,,,,,,,,Column C,Product Descs
+,,,,,,,,,,,,,,,Column D,Product Pic
+,,,,,,,,,,,,,,,Column E,Product Price
+,,,,,,,,,,,,,,,Column F,Product Serial
+,,,,,,,,,,,,,,,Column G,Product Category
+,,,,,,,,,,,,,,,Column H,QTY
+,,,,,,,,,,,,,,,Column I,Low Value
+,,,,,,,,,,,,,,,Column J,High Value
+,,,,,,,,,,,,,,,Column K,Place ID
+,,,,,,,,,,,,,,,Column L,Status ID

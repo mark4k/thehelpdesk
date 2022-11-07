@@ -1,0 +1,10 @@
+{
+    "require": {
+        "aferrandini/phpqrcode": "^1.0"
+    }
+    
+    "config": {
+
+    "platform-check": false
+}
+}
